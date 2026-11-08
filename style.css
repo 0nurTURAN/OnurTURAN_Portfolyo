@@ -1,6 +1,3 @@
-.about-skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-a { color: inherit; text-decoration: none; }
- .logo { font-size: 2.25rem; font-weight: 700; }
 :root {
   --bg: #f3ebdd;
   --bg-alt: #dfcdaf;
@@ -51,7 +48,7 @@ body {
   background: url("source/%C3%A7izim.svg") center / contain no-repeat;
   pointer-events: none;
 }
-.about-education { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.about-skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 a { color: inherit; text-decoration: none; }
 
 .header {
@@ -189,7 +186,7 @@ footer { text-align: center; padding: 1.5rem; background: var(--burgundy); color
   .hero,
   .section { padding-right: 12%; padding-left: 12%; }
   .home-page .section { padding-right: 16%; padding-left: 16%; }
-  .home-page .about-skills > .section { padding-right: 4%; padding-left: 4%; }
+  .home-page .about-skills > .section { padding-right: 20%; padding-left: 20%; }
   .home-page #experience,
   .home-page #education,
   .home-page #projects,
