@@ -7,12 +7,13 @@
   <meta name="description" content="Onur TURAN - Yazılım Mühendisi kişisel portfolyo sitesi">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
   <header class="header">
     <a href="#home" class="logo">Onur<span>.</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
     <nav id="nav">
       <a href="#about">Hakkımda</a>
+      <a href="#education">Eğitim</a>
       <a href="#skills">Yetenekler</a>
       <a href="#projects">Projeler</a>
       <a href="#contact">İletişim</a>
@@ -21,19 +22,35 @@
 
   <main>
     <section id="home" class="hero">
-      <p class="eyebrow">Merhaba, ben</p>
-      <h1>Onur <span>TURAN</span></h1>
-      <h2>Yazılım Mühendisi</h2>
-      <p class="lead">Temiz, ölçeklenebilir ve kullanıcı odaklı yazılımlar geliştiriyorum.</p>
-      <div class="buttons">
-        <a href="#projects" class="btn primary">Projelerim</a>
-        <a href="#contact" class="btn">İletişim</a>
+      <div class="hero-copy">
+        <p class="eyebrow">Merhaba, ben</p>
+        <h1>Onur <span>TURAN</span></h1>
+        <h2>Yazılım Mühendisi</h2>
+        <p class="lead">Temiz, ölçeklenebilir ve kullanıcı odaklı yazılımlar geliştiriyorum.</p>
+        <div class="buttons">
+          <a href="#projects" class="btn primary">Projelerim</a>
+          <a href="#contact" class="btn">İletişim</a>
+        </div>
       </div>
     </section>
 
     <section id="about" class="section">
       <h3 class="title">Hakkımda</h3>
       <p>Ben Onur TURAN, yazılım mühendisliği öğrencisi / mühendisiyim. Web geliştirme, yazılım mimarisi ve problem çözme konularında tutkuluyum. Sürekli öğrenmeyi ve yeni teknolojileri denemeyi seviyorum.</p>
+    </section>
+
+    <section id="education" class="section dark">
+      <h3 class="title">Eğitim</h3>
+      <article class="card education-card">
+        <a href="https://www.linkedin.com/school/14018839/" target="_blank" rel="noopener noreferrer" aria-label="Malatya Turgut Özal Üniversitesi">
+          <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEgKBUGgAjN_w/company-logo_100_100/company-logo_100_100/0/1630552667469?e=1795651200&v=beta&t=ajRGQctYafJJR2nlJi41_PDHfX9YICg9KLQ25ZRrqmc" alt="Malatya Turgut Özal Üniversitesi logosu" width="80" height="80">
+        </a>
+        <div>
+          <h4>Malatya Turgut Özal Üniversitesi</h4>
+          <p>Lisans Derecesi</p>
+          <p>Mühendislik ve Doğa Bilimleri Fakültesi · Yazılım Mühendisliği</p>
+        </div>
+      </article>
     </section>
 
     <section id="skills" class="section dark">
@@ -71,13 +88,29 @@
 
     <section id="contact" class="section dark">
       <h3 class="title">İletişim</h3>
-      <form id="contactForm">
-        <input type="text" id="name" placeholder="Adınız" required>
-        <input type="email" id="email" placeholder="E-posta" required>
-        <textarea id="message" rows="5" placeholder="Mesajınız" required></textarea>
-        <button type="submit" class="btn primary">Gönder</button>
-        <p id="formStatus" role="status"></p>
-      </form>
+      <div class="contact-layout">
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Adınız" required>
+          <input type="email" id="email" placeholder="E-posta" required>
+          <textarea id="message" rows="5" placeholder="Mesajınız" required></textarea>
+          <button type="submit" class="btn primary">Gönder</button>
+          <p id="formStatus" role="status"></p>
+        </form>
+        <aside class="contact-links" aria-label="İletişim bağlantıları">
+          <a class="contact-card" href="https://github.com/0nurTURAN" target="_blank" rel="noopener noreferrer">
+            <span>GitHub</span>
+            <strong>github.com/0nurTURAN</strong>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/onur-turan00/" target="_blank" rel="noopener noreferrer">
+            <span>LinkedIn</span>
+            <strong>linkedin.com/in/onur-turan00</strong>
+          </a>
+          <a class="contact-card" href="mailto:turan.onur.100@gmail.com">
+            <span>E-posta</span>
+            <strong>turan.onur.100@gmail.com</strong>
+          </a>
+        </aside>
+      </div>
     </section>
   </main>
 
