@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onur TURAN | Yazılım Mühendisi</title>
+  <meta name="description" content="Onur TURAN - Yazılım Mühendisi kişisel portfolyo sitesi">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#home" class="logo">Onur<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
+    <nav id="nav">
+      <a href="#about">Hakkımda</a>
+      <a href="#skills">Yetenekler</a>
+      <a href="#projects">Projeler</a>
+      <a href="#contact">İletişim</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">Merhaba, ben</p>
+      <h1>Onur <span>TURAN</span></h1>
+      <h2>Yazılım Mühendisi</h2>
+      <p class="lead">Temiz, ölçeklenebilir ve kullanıcı odaklı yazılımlar geliştiriyorum.</p>
+      <div class="buttons">
+        <a href="#projects" class="btn primary">Projelerim</a>
+        <a href="#contact" class="btn">İletişim</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h3 class="title">Hakkımda</h3>
+      <p>Ben Onur TURAN, yazılım mühendisliği öğrencisi / mühendisiyim. Web geliştirme, yazılım mimarisi ve problem çözme konularında tutkuluyum. Sürekli öğrenmeyi ve yeni teknolojileri denemeyi seviyorum.</p>
+    </section>
+
+    <section id="skills" class="section dark">
+      <h3 class="title">Yetenekler</h3>
+      <div class="skills">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>ASP.NET</span><span>Dart</span><span>Figma</span>
+        <span>Flutter</span><span>Proje Yönetimi</span><span>Ekip Çalışması</span>
+        <span>Git</span><span>SQL</span><span>Kotlin</span><span>Python</span>
+        <span>Java</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h3 class="title">Projeler</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Proje Bir</h4>
+          <p>Kısa proje açıklaması buraya gelecek.</p>
+          <a href="#">Detaylar →</a>
+        </article>
+        <article class="card">
+          <h4>Proje İki</h4>
+          <p>Kısa proje açıklaması buraya gelecek.</p>
+          <a href="#">Detaylar →</a>
+        </article>
+        <article class="card">
+          <h4>Proje Üç</h4>
+          <p>Kısa proje açıklaması buraya gelecek.</p>
+          <a href="#">Detaylar →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section dark">
+      <h3 class="title">İletişim</h3>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Adınız" required>
+        <input type="email" id="email" placeholder="E-posta" required>
+        <textarea id="message" rows="5" placeholder="Mesajınız" required></textarea>
+        <button type="submit" class="btn primary">Gönder</button>
+        <p id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Onur TURAN. Tüm hakları saklıdır.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
