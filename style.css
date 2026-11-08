@@ -1,7 +1,7 @@
  .logo { font-size: 2.25rem; font-weight: 700; }
 :root {
   --bg: #f3ebdd;
-  --bg-alt: #e6d9c3;
+  --bg-alt: #dfcdaf;
   --surface: #faf4e8;
   --text: #1a1a1a;
   --text-body: #444444;
@@ -10,7 +10,7 @@
   --border: #c4b499;
   --burgundy: #800020;
   --burgundy-light: #8f1a35;
-  --teal: #50938e;
+  --teal: #589e99;
   --header-bg: rgba(243, 235, 221, .95);
   --hero-from: #f7f0e3;
   --hero-to: #e3c9ba;
@@ -32,14 +32,18 @@ body {
 .home-page main { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%); }
 .home-page .hero,
 .home-page .section.dark { background: transparent; }
-.home-page .hero { position: relative; isolation: isolate; }
+.home-page .hero {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(to bottom right, var(--bg) 0%, var(--bg-alt) 100%);
+}
 .home-page .hero::after {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 50%;
+  top: 53%;
   right: 12%;
-  width: min(29vw, 340px);
+  width: min(38vw, 436px);
   aspect-ratio: 210 / 297;
   transform: translateY(-50%);
   background: url("source/%C3%A7izim.svg") center / contain no-repeat;
@@ -231,6 +235,6 @@ footer { text-align: center; padding: 1.5rem; background: var(--burgundy); color
   .card { padding: 1.15rem; }
   .education-card { gap: .85rem; }
   .education-card img { width: 64px; height: 64px; }
-  .buttons { gap: .75rem; }
+  .buttons { flex-direction: column; align-items: flex-start; gap: .75rem; }
   .btn { padding: .65rem 1rem; }
 }
