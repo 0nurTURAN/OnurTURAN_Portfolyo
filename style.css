@@ -1,3 +1,5 @@
+.about-skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+a { color: inherit; text-decoration: none; }
  .logo { font-size: 2.25rem; font-weight: 700; }
 :root {
   --bg: #f3ebdd;
@@ -49,7 +51,7 @@ body {
   background: url("source/%C3%A7izim.svg") center / contain no-repeat;
   pointer-events: none;
 }
-
+.about-education { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 a { color: inherit; text-decoration: none; }
 
 .header {
@@ -145,6 +147,12 @@ h2 { font-weight: 400; font-size: clamp(1.95rem, 6vw, 3rem); margin: .5rem 0 1re
 .education-card { display: flex; align-items: center; gap: 1.25rem; max-width: 760px; }
 .education-card img { display: block; width: 80px; height: 80px; object-fit: contain; }
 .education-card p { margin-top: .25rem; }
+.experience-card { display: flex; align-items: flex-start; gap: 1rem; }
+.experience-card img { flex: 0 0 72px; width: 72px; height: 72px; object-fit: contain; }
+.experience-card > div { min-width: 0; }
+.experience-card p { margin-top: .25rem; overflow-wrap: anywhere; }
+.experience-skills { gap: .5rem; margin-top: .75rem; }
+.experience-skills span { padding: .3rem .65rem; font-size: .75em; }
 
 form { display: flex; flex-direction: column; gap: 1rem; max-width: 500px; }
 .contact-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(260px, .9fr); gap: 2rem; align-items: start; }
@@ -180,6 +188,12 @@ footer { text-align: center; padding: 1.5rem; background: var(--burgundy); color
 @media (min-width: 961px) {
   .hero,
   .section { padding-right: 12%; padding-left: 12%; }
+  .home-page .section { padding-right: 16%; padding-left: 16%; }
+  .home-page .about-skills > .section { padding-right: 4%; padding-left: 4%; }
+  .home-page #experience,
+  .home-page #education,
+  .home-page #projects,
+  .home-page #contact { padding-right: 10%; padding-left: 10%; }
 }
 
 @media (max-width: 960px) {
@@ -199,6 +213,7 @@ footer { text-align: center; padding: 1.5rem; background: var(--burgundy); color
 }
 
 @media (max-width: 760px) {
+  .about-skills { grid-template-columns: minmax(0, 1fr); }
   .contact-layout { grid-template-columns: 1fr; }
   .hero { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
   .home-page .hero::after {
@@ -235,6 +250,8 @@ footer { text-align: center; padding: 1.5rem; background: var(--burgundy); color
   .card { padding: 1.15rem; }
   .education-card { gap: .85rem; }
   .education-card img { width: 64px; height: 64px; }
+  .experience-card { gap: .75rem; }
+  .experience-card img { flex-basis: 56px; width: 56px; height: 56px; }
   .buttons { flex-direction: column; align-items: flex-start; gap: .75rem; }
   .btn { padding: .65rem 1rem; }
 }

@@ -13,8 +13,9 @@
     <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
     <nav id="nav">
       <a href="#about">Hakkımda</a>
-      <a href="#education">Eğitim</a>
       <a href="#skills">Yetenekler</a>
+      <a href="#experience">Deneyimler</a>
+      <a href="#education">Eğitim</a>
       <a href="#projects">Projeler</a>
       <a href="#contact">İletişim</a>
     </nav>
@@ -35,33 +36,57 @@
     </section>
 
     <section id="about" class="section">
-      <h3 class="title">Hakkımda</h3>
-      <p>Ben Onur TURAN, yazılım mühendisliği öğrencisi / mühendisiyim. Web geliştirme, yazılım mimarisi ve problem çözme konularında tutkuluyum. Sürekli öğrenmeyi ve yeni teknolojileri denemeyi seviyorum.</p>
+    <div class="about-skills">
+      <section id="about" class="section">
+        <h3 class="title">Hakkımda</h3>
+        <p>Ben Onur TURAN, yazılım mühendisliği öğrencisi / mühendisiyim. Web geliştirme, yazılım mimarisi ve problem çözme konularında tutkuluyum. Sürekli öğrenmeyi ve yeni teknolojileri denemeyi seviyorum.</p>
+      </section>
+
+      <section id="skills" class="section dark">
+        <h3 class="title">Yetenekler</h3>
+        <div class="skills">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <span>ASP.NET</span><span>Dart</span><span>Figma</span>
+          <span>Flutter</span><span>Proje Yönetimi</span><span>Ekip Çalışması</span>
+          <span>Git</span><span>SQL</span><span>Kotlin</span><span>Python</span>
+          <span>Java</span><span>Django</span>
+        </div>
+      </section>
+    </div>
+
+    <section id="experience" class="section">
+      <h3 class="title">Deneyimler</h3>
+      <div class="cards experience-list">
+        <article class="card experience-card">
+          <img src="source/okul_logo.png" alt="Malatya Turgut Özal Üniversitesi logosu" width="72" height="72">
+          <div>
+            <h4>Stajyer</h4>
+            <p>Malatya Turgut Özal Üniversitesi</p>
+            <p>Tem 2026 - Ağu 2026 · 2 ay</p>
+            <p>Malatya, Türkiye</p>
+            <div class="skills experience-skills"><span>ASP.NET</span><span>Ekip Çalışması</span></div>
+          </div>
+        </article>
+        <article class="card experience-card">
+          <div>
+            <h4>Yazılım Stajyeri</h4>
+            <p>Software Persona · Stajyer</p>
+            <p>Mar 2026 - Nis 2026 · 2 ay</p>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section id="education" class="section dark">
       <h3 class="title">Eğitim</h3>
       <article class="card education-card">
-        <a href="https://www.linkedin.com/school/14018839/" target="_blank" rel="noopener noreferrer" aria-label="Malatya Turgut Özal Üniversitesi">
-          <img src="https://media.licdn.com/dms/image/v2/C4D0BAQEgKBUGgAjN_w/company-logo_100_100/company-logo_100_100/0/1630552667469?e=1795651200&v=beta&t=ajRGQctYafJJR2nlJi41_PDHfX9YICg9KLQ25ZRrqmc" alt="Malatya Turgut Özal Üniversitesi logosu" width="80" height="80">
-        </a>
+          <img src="source/okul_logo.png" alt="Malatya Turgut Özal Üniversitesi logosu" width="80" height="80">
         <div>
           <h4>Malatya Turgut Özal Üniversitesi</h4>
           <p>Lisans Derecesi</p>
           <p>Mühendislik ve Doğa Bilimleri Fakültesi · Yazılım Mühendisliği</p>
         </div>
       </article>
-    </section>
-
-    <section id="skills" class="section dark">
-      <h3 class="title">Yetenekler</h3>
-      <div class="skills">
-        <span>HTML</span><span>CSS</span><span>JavaScript</span>
-        <span>ASP.NET</span><span>Dart</span><span>Figma</span>
-        <span>Flutter</span><span>Proje Yönetimi</span><span>Ekip Çalışması</span>
-        <span>Git</span><span>SQL</span><span>Kotlin</span><span>Python</span>
-        <span>Java</span>
-      </div>
     </section>
 
     <section id="projects" class="section">
