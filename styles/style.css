@@ -50,7 +50,7 @@ body {
   width: min(32vw, 410px);
   aspect-ratio: 210 / 297;
   transform: translateY(-50%);
-  background: url("source/%C3%A7izim.svg") center / contain no-repeat;
+  background: url("../source/%C3%A7izim.svg") center / contain no-repeat;
   pointer-events: none;
 }
 .about-skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
