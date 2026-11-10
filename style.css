@@ -21,6 +21,10 @@
 html { scroll-behavior: smooth; }
 section { scroll-margin-top: 5.5rem; }
 
+body.home-page {
+  zoom: .8;
+}
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 1.5rem;
@@ -42,8 +46,8 @@ body {
   position: absolute;
   z-index: -1;
   top: 53%;
-  right: 12%;
-  width: min(38vw, 436px);
+  right: 12.5%;
+  width: min(32vw, 410px);
   aspect-ratio: 210 / 297;
   transform: translateY(-50%);
   background: url("source/%C3%A7izim.svg") center / contain no-repeat;
@@ -72,7 +76,7 @@ nav a:hover { color: var(--teal); }
 .menu-btn { display: none; background: none; border: 0; color: var(--text); font-size: 2.4rem; cursor: pointer; }
 
 .hero {
-  min-height: 100vh;
+  min-height: 125vh;
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
   align-items: center;
@@ -82,7 +86,7 @@ nav a:hover { color: var(--teal); }
 }
 .hero-copy { min-width: 0; }
 .eyebrow { color: var(--burgundy-light); letter-spacing: 2px; text-transform: uppercase; }
-h1 { font-size: clamp(3.75rem, 12vw, 7.5rem); line-height: 1.1; }
+h1 { font-size: clamp(3.375rem, 10.8vw, 6.75rem); line-height: 1.1; }
 h2 { font-weight: 400; font-size: clamp(1.95rem, 6vw, 3rem); margin: .5rem 0 1rem; }
 .lead { max-width: 520px; color: var(--text-muted); margin-bottom: 2rem; }
 
@@ -198,7 +202,7 @@ footer { text-align: center; padding: 1.5rem; background: var(--burgundy); color
   body { font-size: 1rem; }
   .logo { font-size: 1.5rem; }
   .menu-btn { font-size: 1.6rem; }
-  h1 { font-size: clamp(2.5rem, 8vw, 5rem); }
+  h1 { font-size: clamp(2.25rem, 7.2vw, 4.5rem); }
   h2 { font-size: clamp(1.3rem, 4vw, 2rem); }
   .btn { font-size: 1rem; }
   .title { font-size: 2rem; }
@@ -236,14 +240,14 @@ footer { text-align: center; padding: 1.5rem; background: var(--burgundy); color
   }
   nav.open { display: flex; }
   nav a { display: block; padding: .55rem 0; }
-  .hero { min-height: 100svh; padding-top: 6.5rem; padding-bottom: 3rem; }
+  .hero { min-height: 125svh; padding-top: 6.5rem; padding-bottom: 3rem; }
 }
 
 @media (max-width: 480px) {
   .header { padding: .8rem 5%; }
   .section { padding: 3.75rem 5%; }
   .title { font-size: 1.7rem; }
-  h1 { font-size: clamp(2.35rem, 12vw, 3.5rem); }
+  h1 { font-size: clamp(2.115rem, 10.8vw, 3.15rem); }
   .cards { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
   .card { padding: 1.15rem; }
   .education-card,
