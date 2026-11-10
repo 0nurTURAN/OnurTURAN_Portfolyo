@@ -98,6 +98,7 @@
   }
 
   .projects-page .projects-intro-illustration {
-    display: none;
+    justify-self: center;
+    width: min(100%, 220px);
   }
 }
