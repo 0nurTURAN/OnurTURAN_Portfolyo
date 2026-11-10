@@ -4,7 +4,7 @@
 
 ## Aktif / Devam Eden Projeler
 
-### [KazaAnalizBitirme](https://github.com/0nurTURAN/KazaAnalizBitirme)
+### [KazaAnaliz](https://github.com/0nurTURAN/KazaAnalizBitirme)
 - **Görünürlük:** Private
 - **Dil:** Python
 - **Açıklama:** Bitirme projesi — fotoğraf tabanlı araç kazası hasar tespiti (YOLOv8 + Django)

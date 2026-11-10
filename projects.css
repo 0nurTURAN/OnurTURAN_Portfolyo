@@ -1,0 +1,99 @@
+/* Project page presentation, built on the shared components in style.css. */
+.projects-page .svg-filter-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.projects-page main {
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
+}
+
+.projects-page .section.dark {
+  background: transparent;
+}
+
+.projects-page .section-divider {
+  width: min(90%, 100rem);
+  height: 2px;
+  margin: 0 auto;
+  border: 0;
+  background: var(--burgundy);
+}
+
+.projects-page main > .section:first-child {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+.projects-page .projects-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 30%);
+  align-items: center;
+  gap: 3rem;
+}
+
+.projects-page main > .section:first-child p {
+  max-width: 42rem;
+  font-size: 1.1em;
+}
+
+.projects-page .projects-intro-illustration {
+  display: block;
+  justify-self: end;
+  width: min(100%, 280px);
+  height: auto;
+  filter: url("projects.html#powderPinkFilter");
+}
+
+.projects-page .cards {
+  align-items: stretch;
+}
+
+.projects-page .card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.projects-page .card h3 {
+  margin-bottom: .65rem;
+  color: var(--burgundy);
+  font-size: 1.2em;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.projects-page .card p + p {
+  margin-top: .75rem;
+  color: var(--text-muted);
+  font-size: .9em;
+}
+
+.projects-page .card a {
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 960px) {
+  .projects-page main > .section:first-child {
+    padding-top: 6.5rem;
+  }
+
+  .projects-page .projects-intro {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .projects-page .projects-intro {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .projects-page .projects-intro-illustration {
+    display: none;
+  }
+}

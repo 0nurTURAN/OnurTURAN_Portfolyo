@@ -6,8 +6,9 @@
   <title>Projeler | Onur TURAN</title>
   <meta name="description" content="Onur TURAN'ın yazılım, staj ve topluluk projeleri.">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projects.css">
 </head>
-<body>
+<body class="projects-page">
   <header class="header">
     <a href="index.html#home" class="logo">Onur<span>.</span></a>
     <button class="menu-btn" id="menuBtn" aria-label="Menü">☰</button>
@@ -19,17 +20,31 @@
     </nav>
   </header>
 
+  <svg class="svg-filter-defs" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="powderPinkFilter">
+        <feFlood flood-color="var(--powder-pink)" result="pink"></feFlood>
+        <feComposite in="pink" in2="SourceAlpha" operator="in"></feComposite>
+      </filter>
+    </defs>
+  </svg>
+
   <main>
-    <section class="section">
-      <h1 class="title">Projeler</h1>
-      <p>Yazılım, staj ve topluluk çalışmalarından seçili projeler.</p>
+    <section class="section projects-intro">
+      <div class="projects-intro-copy">
+        <h1 class="title">Projeler</h1>
+        <p>Yazılım mühendisliği eğitimim boyunca; bitirme projesinden staj çalışmalarına, gönüllü topluluk projelerinden kişisel denemelere kadar farklı alanlarda ürünler geliştirdim. Bu çalışmalar bana hem teknik derinlik hem de gerçek ihtiyaçlara çözüm üretme deneyimi kazandırdı.</p>
+      </div>
+      <img class="projects-intro-illustration" src="source/shinobu2.svg" alt="Shinobu illüstrasyonu">
     </section>
+
+    <hr class="section-divider">
 
     <section class="section dark">
       <h2 class="title">Aktif / Devam Eden</h2>
       <div class="cards">
         <article class="card" id="kaza-analiz">
-          <h3>KazaAnalizBitirme</h3>
+          <h3>KazaAnaliz</h3>
           <p>Fotoğraf tabanlı araç kazası hasar tespiti için geliştirilen bitirme projesi.</p>
           <p>Python · YOLOv8 · Django · Özel depo</p>
         </article>
