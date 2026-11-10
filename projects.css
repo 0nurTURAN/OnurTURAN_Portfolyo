@@ -1,4 +1,8 @@
 /* Project page presentation, built on the shared components in style.css. */
+.projects-page {
+  zoom: .8;
+}
+
 .projects-page .svg-filter-defs {
   position: absolute;
   width: 0;
@@ -42,7 +46,7 @@
 .projects-page .projects-intro-illustration {
   display: block;
   justify-self: end;
-  width: min(100%, 280px);
+  width: min(100%, 300px);
   height: auto;
   filter: url("projects.html#powderPinkFilter");
 }
